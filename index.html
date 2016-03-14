@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mooc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.skippr.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	
+	
+	<style> 
+
+     </style> 
+</head>
+<body style="overflow:-Scroll;overflow-x:hidden" onload="test()">
+    <div class="nav"> <img id="logo" src="images/logo.png" height="35px" width="120px">
+    <a href="#">课程</a>
+    <a href="#">计划</a>
+    <a href="#">猿问</a>
+    <a href="#">文章</a>
+    
+    <a href="#" id="reg">注册</a>
+    <a  href="#" id="load">登录</a>
+     <textarea rows="1" cols="15" value="请输入需要搜索的内容..."  id="search1"></textarea>
+   
+    </div>
+    
+    <div id="myskipper" >
+    <div class="nav_bg_inner" style="background:url(images/banner2.jpg) center top no-repeat  "></div>
+    <div  class="nav_bg_inner" style="background:url(images/banner2.jpg) center top no-repeat "></div>
+      </div>
+      
+    <a href="#" id="know_more" style="display:block;height:30px;width:80px;background-color:rgba(0,0,0,0);color:#182124;zoom:1000;line-height:30px;position:absolute;top:400px;">了解更多</a>
+   
+    <div id="part_1">
+    <div class="section"><img src="images/char-icon1.png"></div>
+    <div class="section"><img src="images/char-icon2.png"></div>
+    <div class="section"><img src="images/char-icon3.png"></div>
+    </div>
+     <div id="part_2">
+     	<div id="part2_video_course">
+     	<div id="p2_video_pic1"><img src="images/01-video.png"></div>
+     	<div id="p2_video_pic2"><img src="images/01-star.png"></div>
+     	<div id="p2_video_text"><img src="images/01-text.png"></div>
+        </div>
+        <div id="part2_biancheng">
+        <div id="p2_biancheng_pic"><img src="images/02-computer1.png"></div>	
+         <div id="p2_biancheng_text"><img src="images/02-text.png"></div>	
+        </div>
+     	<div id="part2_plan">
+     	<div id="p2_plan_pic2"><img src="images/03-calendar.png"></div>
+     	<div id="p2_plan_pic1"><img src="images/03-rockets.png"></div>
+     	<div id="p2_plan_pic3"><img src="images/03-smoke.png"></div>
+     	<div id="p2_plan_text"><img src="images/03-text.png"></div>
+        </div>
+         <div id="part2_answer">
+        <div id="p2_answer_pic"><img src="images/04-hand.png"></div>	
+         <div id="p2_answer_text"><img src="images/04-text.png"></div>	
+        </div>
+     </div>
+     <div id="part_3">
+     	 <div id="p3_section1">
+     	 	<a href="#"><img src="images/32.jpg"</a>
+     	 	<a href="#"><img src="images/33.jpg"</a>
+     	 	<a href="#"><img src="images/14.jpg"</a>
+     	 </div>
+     	 <p id="course">课程</p>
+     	  <div id="p3_section2">
+     	   <a href="#" id="show1"><div class="box"><img src="images/19.jpg" id="object1"></div><span id="explain1">ios9那些神坑</span><div class="box1"><span id="update1">1天前更新</span><span id="learner1">3369人学习</span></div></a>
+     	   <a href="#" id="show2"><div class="box"><img src="images/20.jpg" id="object2"></div><span id="explain2">Cocos2坦克大战--上</span><div class="box1"><span id="update2">1天前更新</span><span id="learner2">2686人学习</span></div></a>
+     	   <a href="#" id="show3"><div class="box"><img src="images/37.jpg" id="object3"></div><span id="explain3">用C#实现封装</span><div class="box1"><span id="update3">2天前更新</span><span id="learner3">1975人学习</span></div></a>
+           <a href="#" id="show4"><div class="box"><img src="images/38.jpg" id="object4"></div><span id="explain4">CSS深入了解relative</span><div class="box1"><span id="update4">3天前更新</span><span id="learner4">8706人学习</span></div></a>
+           <a href="#" id="show5"><div class="box"><img src="images/22.jpg" id="object5"></div><span id="explain5">MongoDB复制集一容灾核心选举</span><div class="box1"><span id="update5">4天前更新</span><span id="learner5">947人学习</span></div></a> 
+     	   <a href="#" id="show6"><div class="box"><img src="images/17.jpg" id="object6"></div><span id="explain6">AIDL-小白成长记，快速入门课程！</span><div class="box1"><span id="update6">5天前更新</span><span id="learner6">7891人学习</span></div></a>
+     	   <a href="#" id="show7"><div class="box"><img src="images/36.jpg" id="object7"></div><span id="explain7">IOS基础入门之Founudation框架初体验</span><div class="box1"><span id="update7">2016-02-26更新</span><span id="learner7">6642人学习</span></div></a>
+     	   <a href="#" id="show8"><div class="box"><img src="images/16.jpg" id="object8"></div><span id="explain8">PHP实现手机归属地查询</span><div class="box1"><span id="update8">2016-02-25更新</span><span id="learner8">19799人学习</span></div></a>
+     	   <button id="all_course" href="#">全部课程</button>   	
+     	  </div>
+     	    <div  id="part_4">
+     	    	<div id="big_box">
+     	    		<a href="#" class="big_pic_box"><img id="big_pic1" src="images/31.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic2_1" src="images/8.jpg"><img id="small_pic2_2" src="images/12.jpg"><img id="small_pic2_3" src="images/1.jpg"><img id="small_pic2_4" src="images/23.jpg"></a>
+     	    		<a href="#" class="big_pic_box"><img id="big_pic3" src="images/29.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic4_1" src="images/5.jpg"><img id="small_pic4_2" src="images/11.jpg"><img id="small_pic4_3" src="images/42.jpg"><img id="small_pic4_4" src="images/23.jpg"></a>
+     	    		<a href="#" class="big_pic_box"><img id="big_pic5" src="images/40.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic6_1" src="images/10.jpg"><img id="small_pic6_2" src="images/7.jpg"><img id="small_pic6_3" src="images/28.jpg"><img id="small_pic6_4" src="images/34.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic8_1" src="images/41.jpg"><img id="small_pic8_2" src="images/18.jpg"><img id="small_pic8_3" src="images/6.jpg"><img id="small_pic8_4" src="images/24.jpg"></a>
+     	    		<a href="#" class="big_pic_box"><img id="big_pic7"  src="images/25.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic10_1" src="images/2.jpg"><img id="small_pic10_2" src="images/30.jpg"><img id="small_pic10_3" src="images/13.jpg"><img id="small_pic10_4" src="images/35.jpg"></a>
+     	    		<a href="#" class="big_pic_box"><img id="big_pic9" src="images/26.jpg"></a>
+     	    		<a href="#" class="small_pic_box"><img id="small_pic12_1" src="images/15.jpg"><img id="small_pic12_2" src="images/4.jpg"><img id="small_pic12_3" src="images/9.jpg"><img id="small_pic12_4" src="images/27.jpg"></a>
+     	    		<a href="#" class="big_pic_box"><img id="big_pic11" src="images/3.jpg"></a>
+      	    	</div>
+      	    </div>
+      	    	<div id="cover">
+      	    		<div id="big_cover1"></div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover2_1"></div>
+      	    			<div id="small_cover2_2"></div>
+      	    			<div id="small_cover2_3"></div>
+      	    			<div id="small_cover2_4"></div>
+      	    		</div>
+      	    		<div id="big_cover3"></div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover4_1"></div>
+      	    			<div id="small_cover4_2"></div>
+      	    			<div id="small_cover4_3"></div>
+      	    			<div id="small_cover4_4"></div>
+      	    		</div>
+      	    		<div id="big_cover5"></div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover6_1"></div>
+      	    			<div id="small_cover6_2"></div>
+      	    			<div id="small_cover6_3"></div>
+      	    			<div id="small_cover6_4"></div>
+      	    		</div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover8_1"></div>
+      	    			<div id="small_cover8_2"></div>
+      	    			<div id="small_cover8_3"></div>
+      	    			<div id="small_cover8_4"></div>
+      	    		</div>
+      	    		<div id="big_cover7"></div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover10_1"></div>
+      	    			<div id="small_cover10_2"></div>
+      	    			<div id="small_cover10_3"></div>
+      	    			<div id="small_cover10_4"></div>
+      	    		</div>
+      	    		<div id="big_cover9"></div>
+      	    		<div class="small_cover_box">
+      	    			<div id="small_cover12_1"></div>
+      	    			<div id="small_cover12_2"></div>
+      	    			<div id="small_cover12_3"></div>
+      	    			<div id="small_cover12_4"></div>
+      	    		</div>
+      	    		<div id="big_cover11"></div>
+      	    		
+      	    	</div>
+
+      	    	<div id="family"><img src="images/family-text.png"></div>
+                <div id="mobile" style="background:url(images/mobile-bg.png)">
+                	<img src="images/phone-text.png" id="text">
+                	<div id="button_box"><button>手机版</button><button>ipad版</button><a href="#" id="erweima"><img id="erweima_pic" src="images/2.png"></a></div>
+                	<div id="phone"></div>
+                </div>
+                <div id="begin_learn" >
+                	<button id="learn">开始学习</button>
+                     <div id="cover_1"></div>
+                </div>
+                <div id="contact">
+                     <div id="icon_box">
+                     	<img src="images/weibo.png">
+                     	<img src="images/weixin.png" id="weixin">
+                     	<img src="images/huafen.png">
+                     	<img src="images/kongjian.png">
+                     </div>
+                     <div id="detail">
+                     	<a href="#" class="ok">关于我们</a>
+                     	<a href="#" class="ok">人才招聘</a>
+                     	<a href="#" class="ok">讲师招募</a>
+                     	<a href="#" class="ok">联系我们</a>
+                     	<a href="#" class="ok">意见反馈</a>
+                     </div>
+                     <div id="link">
+                     	<div id="container">
+                     		<li>友情链接：</li>
+                            <a href="#" class="web">360导航</a>
+                            <a href="#" class="web">PHP站中文网</a>
+                            <a href="#"class="web">hao123</a>
+                            <a href="#"class="web">拉勾网</a>
+                            <a href="#"class="web">web开发者</a>
+                            <a href="#"class="web">更多...</a>
+                     	</div>
+                     </div>
+                     <div id="copyright">Copyright&copy;2016 imooc.com All Rights Reserved|京ICP备 13046642号-2</div>
+                     <div id="kekao">
+                     	<img id="kekao_inner" src="images/43.png">
+                     </div>
+
+                </div>
+                <div id="big_erweima"></div>
+                <div id="icon_cover_box">
+                	<div class="cover_3"></div>
+                	<div id="cover_weixin"></div>
+                	<div class="cover_3"></div>
+                	<div class="cover_3"></div>
+                </div>
+     	    <div id="c1">
+     	    	<p class="name">Rango</p>
+     	    	<p class="pro">PHP开发工程师</p>
+     	    	<p class="big_text">多玩技术部基础平台组技术经理，PHP官方PECL开发组成员，Swoole开源项目创始人，前腾讯朋友网、易迅网、淘宝网搜索的后台团队核心技术骨干。</p>
+     	    </div>
+     	     <div id="c3">
+     	    	<p class="name">Pangee</p>
+     	    	<p class="pro">学生</p>
+     	    	<p class="big_text">高级研发工程师，就职于全球颇有影响力的搜索引擎公司，曾供职于新浪。负责移动客户端相关的服务端研发工作，对大流量业务、高并发业务有较多的经验与解决方案。技术极客，喜欢一切新特奇技术，希望把技术做到极致。...</p>
+     	    </div>
+     	    
+     	    <div id="c5">
+     	    	<p class="name">Liuyubobobo</p>
+     	    	<p class="pro">其他</p>
+     	    	<p class="big_text">创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。</p>
+     	    </div>
+     	     <div id="c7">
+     	    	<p class="name">远人</p>
+     	    	<p class="pro">其他</p>
+     	    	<p class="big_text">资深前端攻城师，先后就职于腾讯、人人网，具有丰富的海量服务前端开发经验。也曾担任多个创业团队技术顾问。现就职于某知名互联网公司，是最资深的云前端工程师，首席前端架构师，实践经验丰富。</p>
+     	    </div>
+     	    <div id="c9">
+     	    	<p class="name">张鑫旭</p>
+     	    	<p class="pro">页面重构师</p>
+     	    	<p class="big_text">web前端，就职于腾讯ISUX上海设计中心，喜欢卖萌打杂，同事都叫我张老师，(*^__^*) 嘻嘻……</p>
+     	    </div>
+     	    
+     	    <div id="c11">
+     	    	<p class="name">林永坚Iake</p>
+     	    	<p class="pro">其他</p>
+     	    	<p class="big_text">全栈工程师，独立开发者，咨询公司高级顾问。所开发的iOS APP多次登上苹果App Store分类榜榜首。做为一个持续学习者，不间断地折腾各种新技术和方法，并乐于推广，让大家一起感受技术的力量！</p>
+     	    </div>
+     	    <div id="c2_1">
+     	    	<p class="name1">leejesey</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">1843小时</li>
+     	    	<li class="item1">222门课</li>
+     	    </div>
+     	     <div id="c2_2">
+     	    	<p class="name1">学习人生</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">1601小时7分</li>
+     	    	<li class="item1">152门课</li>
+     	    </div>
+     	     <div id="c2_3">
+     	    	<p class="name1">Randmond小文</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">1333小时30分</li>
+     	    	<li class="item1">108门课</li>
+     	    </div>
+     	     <div id="c2_4">
+     	    	<p class="name1">名小鹅</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">1065小时56分</li>
+     	    	<li class="item1">116门课</li>
+     	    </div>
+     	    <div id="c4_1">
+     	    	<p class="name1">RainbowPeter</p>
+     	    	<p class="pro">JAVA开发工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">1040小时59分</li>
+     	    	<li class="item1">289门课</li>
+     	    </div>
+     	     <div id="c4_2">
+     	    	<p class="name1">smile agin</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">680小时36分</li>
+     	    	<li class="item1">103门课</li>
+     	    </div>
+     	     <div id="c4_3">
+     	    	<p class="name1">吕氏总裁</p>
+     	    	<p class="pro">学生</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">622小时55分</li>
+     	    	<li class="item1">175门课</li>
+     	    </div>
+     	     <div id="c4_4">
+     	    	<p class="name1">加加摩尔</p>
+     	    	<p class="pro">PHP开发工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">649小时54分</li>
+     	    	<li class="item1">105门课</li>
+     	    </div>
+     	    <div id="c6_1">
+     	    	<p class="name1">Linda liu</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">617小时35分</li>
+     	    	<li class="item1">107门课</li>
+     	    </div>
+     	     <div id="c6_2">
+     	    	<p class="name1">酸奶沙冰</p>
+     	    	<p class="pro">交互设计师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">578小时43分</li>
+     	    	<li class="item1">190门课</li>
+     	    </div>
+     	     <div id="c6_3">
+     	    	<p class="name1">O Duok</p>
+     	    	<p class="pro">web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">567小时32分</li>
+     	    	<li class="item1">24门课</li>
+     	    </div>
+     	     <div id="c6_4">
+     	    	<p class="name1">w7851435</p>
+     	    	<p class="pro">PHP开发工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">538小时59分</li>
+     	    	<li class="item1">120门课</li>
+     	    </div>
+     	     <div id="c8_1">
+     	    	<p class="name1">化龙贝</p>
+     	    	<p class="pro">学生</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">487小时40分</li>
+     	    	<li class="item1">255门课</li>
+     	    </div>
+     	     <div id="c8_2">
+     	    	<p class="name1">K Biao</p>
+     	    	<p class="pro">学生</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">476小时37分</li>
+     	    	<li class="item1">162门课</li>
+     	    </div>
+     	     <div id="c8_3">
+     	    	<p class="name1">MistyMoon</p>
+     	    	<p class="pro">其他</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">443小时42分</li>
+     	    	<li class="item1">152门课</li>
+     	    </div>
+     	     <div id="c8_4">
+     	    	<p class="name1">Cynthia</p>
+     	    	<p class="pro">UI设计师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">421小时55分</li>
+     	    	<li class="item1">67门课</li>
+     	    </div>
+     	    <div id="c10_1">
+     	    	<p class="name1">沧海一声笑 0001</p>
+     	    	<p class="pro"></p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">417小时2分</li>
+     	    	<li class="item1">39门课</li>
+     	    </div>
+     	     <div id="c10_2">
+     	    	<p class="name1">JoeMartini</p>
+     	    	<p class="pro">产品经理</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">397小时2分</li>
+     	    	<li class="item1">16门课</li>
+     	    </div>
+     	     <div id="c10_3">
+     	    	<p class="name1">Jaywin、</p>
+     	    	<p class="pro">Web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">393小时29分</li>
+     	    	<li class="item1">149门课</li>
+     	    </div>
+     	     <div id="c10_4">
+     	    	<p class="name1">伪文艺文委</p>
+     	    	<p class="pro">PHP开发工程师/p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">314小时42分</li>
+     	    	<li class="item1">109门课</li>
+     	    </div>
+     	    <div id="c12_1">
+     	    	<p class="name1">lunoa</p>
+     	    	<p class="pro">学生</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">306小时53分</li>
+     	    	<li class="item1">31门课</li>
+     	    </div>
+     	     <div id="c12_2">
+     	    	<p class="name1">宝贝我一直都在</p>
+     	    	<p class="pro">Linux系统工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">296小时6分</li>
+     	    	<li class="item1">65门课</li>
+     	    </div>
+     	     <div id="c12_3">
+     	    	<p class="name1">路飞弟弟</p>
+     	    	<p class="pro">Web前端工程师</p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">241小时29分</li>
+     	    	<li class="item1">91门课</li>
+     	    </div>
+     	     <div id="c12_4">
+     	    	<p class="name1">鱼与熊掌势必要兼得</p>
+     	    	<p class="pro">软件测试工程师/p>
+     	    	<li class="item">学习</li>
+     	    	<li class="item">课程</li>
+     	    	<li class="item1">170小时15分</li>
+     	    	<li class="item1">35门课</li>
+     	    </div>
+     	    <a id="a" href="#"></a>
+            <div id="search_cover"><img src="images/plug.png" id="img"></div>
+     	    
+     	    
+
+
+
+     
+</body>
+
+</html>
